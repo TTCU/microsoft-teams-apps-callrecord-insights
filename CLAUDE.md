@@ -102,3 +102,11 @@ Central package versions managed in `Directory.Packages.props`:
 - Microsoft.Azure.Cosmos - Cosmos DB client
 - Microsoft.Identity.Web - Azure AD authentication
 - Azure Functions SDK v4
+
+
+## AI_HANDOFF.md Protocol
+(These rules govern the 'AI_HANDOFF.md' file found in the root)
+1. **Transient State Only:** This file is a specific 'mutex' token for the next session. It is NOT a project history log.
+2. **No Documentation:** Do not write architectural decisions or code snippets here. Use README.md for that.
+3. **Clean Up:** When updating this file, REMOVE completed tasks. Do not mark them as [x] and leave them. The file should only ever contain the *current* state and *immediate* next steps.
+4. **Size Limit:** Keep this file short (under 50 lines).
